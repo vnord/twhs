@@ -22,9 +22,9 @@ library
                      , Web.Twitter.Twhs.Common
                      , Web.Twitter.Twhs.Config
                      , Paths_twhs
-  build-depends:       base >=4.6 && <4.7
-                     , twitter-conduit ==0.1.0
-                     , twitter-types-lens ==0.6.0
+  build-depends:       base >=4.6
+                     , twitter-conduit
+                     , twitter-types-lens
                      , authenticate-oauth >=1.4.0.8
                      , transformers
                      , resourcet
@@ -50,9 +50,9 @@ library
 executable twhs
   main-is:             main.hs
   -- other-extensions:    
-  build-depends:       base >=4.6 && <4.7
+  build-depends:       base >=4.6
                      , twitter-conduit >=0.1.0
-                     , twitter-types-lens ==0.6.0
+                     , twitter-types-lens
                      , authenticate-oauth >=1.4.0.8
                      , transformers
                      , resourcet
